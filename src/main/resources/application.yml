@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5436/cafe_chain_db
+    username: user1
+    password: admin
+    driverClassName: org.postgresql.Driver
+
+  flyway:
+    enabled: true
+    user: user1
+    password: admin
+    schemas: public
+    url: jdbc:postgresql://localhost:5436/cafe_chain_db
+    locations: db.migration
